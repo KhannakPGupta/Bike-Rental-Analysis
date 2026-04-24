@@ -1,0 +1,10 @@
+#Cell for the final plot
+plt.figure(figsize=(15,6))
+plt.plot(y_test.index, y_test.values, label='Actual', linewidth=2)
+plt.plot(y_test.index, y_pred, label='Predicted', linestyle='--')
+plt.title("Actual vs Predicted Bike Rentals (Test Set)", fontsize=14)
+plt.xlabel("Time")
+plt.ylabel("Number of Rentals")
+plt.grid(alpha=0.3)
+plt.legend()
+plt.show()
